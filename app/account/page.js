@@ -1,5 +1,9 @@
-function AccountPage() {
-  return <h1>Your Account</h1>;
+export const metadata = {
+  title: 'Guest area',
 }
 
-export default AccountPage;
+function AccountPage() {
+  return <h1>Your Account</h1>
+}
+
+export default AccountPage
