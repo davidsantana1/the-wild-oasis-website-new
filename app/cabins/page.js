@@ -1,10 +1,12 @@
-import { Suspense } from 'react'
-import CabinList from '@/app/_components/CabinList'
-import Spinner from '@/app/_components/Spinner'
+import { Suspense } from "react";
+import CabinList from "@/app/_components/CabinList";
+import Spinner from "@/app/_components/Spinner";
 
 export const metadata = {
-  title: 'Cabins',
-}
+  title: "Cabins",
+};
+
+export const revalidate = 3600;
 
 function Page() {
   return (
@@ -25,7 +27,7 @@ function Page() {
         <CabinList />
       </Suspense>
     </div>
-  )
+  );
 }
 
-export default Page
+export default Page;
